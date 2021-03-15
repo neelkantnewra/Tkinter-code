@@ -6,7 +6,7 @@ Traditional programming and codes are not for user when we have to give any proj
 useful text environment.
 
 Mainly after doing many project on tkinter in windows when i first tried in OSx i faced many issue regarding with button color, insert etc. From this project i get 
-to know more about how a to handle grid,to work on Entry and how to use any function.
+to know more about how to handle a grid,to work on Entry and how to use any function.
 
 ![Screenshot 2021-03-15 at 7 39 53 PM](https://user-images.githubusercontent.com/63470232/111185126-ad7c4f00-85d7-11eb-9d3d-82d6ff78857c.png)
 
