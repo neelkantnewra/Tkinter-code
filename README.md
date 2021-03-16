@@ -1,4 +1,4 @@
-# Tkinter project
+# Tkinter Project
 All my project or learning related with python tkinter will be available here
 
 ## Project Sample
