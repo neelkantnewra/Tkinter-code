@@ -7,7 +7,7 @@ root = Tk()
 def open():
     global myImage
     top =Toplevel()
-    myImage = ImageTk.PhotoImage(Image.open("learning/src/Landscape2.jpeg").resize((400,200)))
+    myImage = ImageTk.PhotoImage(Image.open("src/Landscape2.jpeg").resize((400,200)))
     myLabel = Label(top,image = myImage).pack()
     CircleButton(top,text = "Close",command = top.destroy).pack(padx=10,pady=10)
 
