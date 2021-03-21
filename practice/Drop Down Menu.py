@@ -1,14 +1,22 @@
 from tkinter import Tk,OptionMenu,Label,W,IntVar,StringVar,ttk
 from tkmacosx import Button
+from datetime import date
 
 root = Tk()
 root.title("Drop Down Menu")
-root.geometry("300x700")
+root.geometry("300x400")
+
+today = date.today()
+d1 = today.strftime("%d/%m/%Y")
+
+d1 = d1.split("/")
+d1 = d1[2]
 
 def submit():
+    global d1
     global feedback
     feedback.grid_forget()
-    feedback = Label(root,text= "Your Date of Birth is\n "+ day.get()+" " + month.get()+" " + year.get())
+    feedback = Label(root,text= "Your Date of Birth is\n "+ day.get()+" " + month.get()+" " + year.get()+"\n and you age is " + str(int(d1) - int(year.get())))
     feedback.grid(row=3,column=0,padx=5,pady=5,columnspan=3)
 
 Day = [str(x) for x in range(1,32)]
@@ -43,6 +51,7 @@ btn = Button(root,text="Submit",command=submit)
 
 feedback = Label(root,text="Waiting for your Response...")
 
+
 feedback.grid(row=3,column=0,padx=5,pady=5,columnspan=3)
 
 day_drop_down.grid(row=1,column=0,sticky=W,padx=5)
@@ -50,6 +59,7 @@ month_drop_down.grid(row=1,column=1,sticky=W,padx=5)
 year_drop_down.grid(row=1,column=2,sticky=W,padx=5)
 question.grid(row=0,column=0,padx=5,pady=5,sticky=W,columnspan=3)
 btn.grid(row=2,column=0,padx=5,pady=5,columnspan=3)
+
 
 
 
